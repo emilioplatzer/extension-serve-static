@@ -2,10 +2,12 @@ var connect = require('connect')
 var path = require('path')
 var url = require('url');
 var extensionServeStatic = require('..')
+
+mime.types.specialtext = 'text/special';
  
 var app = connect()
  
-app.use(extensionServeStatic('test/fixtures', {index: ['todo.html'], extensions:['html'], staticExtensions:['','html','png','txt']}))
+app.use(extensionServeStatic('test/fixtures', {index: ['todo.html'], extensions:['html'], staticExtensions:['','html','png','txt','specialtext']}))
 
 app.use(function(req, res, next){
     console.log('entrance:',req.url);

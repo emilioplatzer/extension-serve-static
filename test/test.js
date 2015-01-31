@@ -14,7 +14,7 @@ describe('extensionServeStatic()', function(){
   describe('basic operations', function(){
     var server;
     before(function () {
-      server = createServer(null,{staticExtensions:['','txt','png','html','php']});
+      server = createServer(null,{staticExtensions:['','txt','png','html','php','specialtext']});
     });
 
     it('should serve static files', function(done){
@@ -66,6 +66,14 @@ describe('extensionServeStatic()', function(){
       request(server)
       .get('/a_program.php')
       .expect(404, 'sorry!', done);
+    });
+
+    it('should not skip special mimed extensions', function(done){
+      var mime = extensionServeStatic.mime;
+      mime.types.specialtext = 'text/special';
+      request(server)
+      .get('/this.specialtext')
+      .expect(200, 'this special text', done);
     });
   })
 });
