@@ -75,6 +75,14 @@ describe('extensionServeStatic()', function(){
       .get('/this.specialtext')
       .expect(200, 'this special text', done);
     });
+
+    it('should require options', function(){
+      assert.throws(extensionServeStatic.bind(null,'/'), /options required/);
+    });
+
+    it('should require staticExtensions', function(){
+      assert.throws(extensionServeStatic.bind(null,'/',{}), /options.staticExtensions required/);
+    });
   })
 });
 
@@ -91,6 +99,7 @@ function createServer(dir, opts, fn) {
     });
   });
 }
+
 
 /*
 function shouldNotHaveHeader(header) {

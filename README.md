@@ -10,11 +10,11 @@ serve-static based on file name extensions
 ## based on serve-static
 
 All in [*serve-static* documentation](https://www.npmjs.com/package/serve-static#readme) is working here. 
-But extension-serve-static add one mandatory [parameter](https://www.npmjs.com/package/serve-static#options): 
+But *extension-serve-static* add one mandatory [parameter](https://www.npmjs.com/package/serve-static#options): 
 
 ## staticExtensions
 
-*staticExtensions* is a white list of extensions names for serve, this allows something like:
+*staticExtensions* is a white list of extensions names for serve, this allows something like this:
 
 ```js
 var connect = require('connect')
@@ -36,7 +36,7 @@ app.listen(3000)
 ## default extensions
 
 For use the *serve-static* [extensions](https://www.npmjs.com/package/serve-static#extensions) parameter
-you must include de empty string ('') in the staticExtension list. 
+you must include de empty string ('') in the staticExtension list (as you see in the example). 
 
 ## mime types
 
@@ -79,5 +79,3 @@ app.listen(3000)
 [coveralls-url]: https://coveralls.io/r/emilioplatzer/extension-serve-static
 [downloads-image]: https://img.shields.io/npm/dm/extension-serve-static.svg?style=flat
 [downloads-url]: https://npmjs.org/package/extension-serve-static
-
-[![Coverage Status](https://coveralls.io/repos/emilioplatzer/extension-serve-static/badge.svg)](https://coveralls.io/r/emilioplatzer/extension-serve-static)
