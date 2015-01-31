@@ -1,7 +1,7 @@
 {
   "name": "extension-serve-static",
   "description": "Serve static files based on file name extensions",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "Emilio Platzer <emilioplatzer@outlook.com>",
   "license": "GPL-2.0",
   "repository": "emiloplatzer/extension-serve-static",

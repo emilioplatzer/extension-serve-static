@@ -73,9 +73,11 @@ app.listen(3000)
 [npm-url]: https://npmjs.org/package/extension-serve-static
 [travis-image]: https://img.shields.io/travis/emilioplatzer/extension-serve-static/master.svg?label=linux&style=flat
 [travis-url]: https://travis-ci.org/emilioplatzer/extension-serve-static
-[appveyor-image]: https://img.shields.io/appveyor/ci/dougwilson/extension-serve-static/master.svg?label=windows&style=flat
-[appveyor-url]: https://ci.appveyor.com/project/dougwilson/extension-serve-static
+[appveyor-image]: https://img.shields.io/appveyor/ci/emilioplatzer/extension-serve-static/master.svg?label=windows&style=flat
+[appveyor-url]: https://ci.appveyor.com/project/emilioplatzer/extension-serve-static
 [coveralls-image]: https://img.shields.io/coveralls/emilioplatzer/extension-serve-static/master.svg?style=flat
 [coveralls-url]: https://coveralls.io/r/emilioplatzer/extension-serve-static
 [downloads-image]: https://img.shields.io/npm/dm/extension-serve-static.svg?style=flat
 [downloads-url]: https://npmjs.org/package/extension-serve-static
+
+[![Coverage Status](https://coveralls.io/repos/emilioplatzer/extension-serve-static/badge.svg)](https://coveralls.io/r/emilioplatzer/extension-serve-static)
